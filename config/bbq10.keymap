@@ -229,30 +229,30 @@
 
         default_layer {
             bindings = <
-&mkp MB2              &mkp MB1
-&mtt LC(LA(DEL)) TAB  &msk LGUI LGUI  &mkp MB3      &mtt ESC K_BACK  &mtt UP_ARROW DOWN_ARROW
-&mtt N0 Q             &mtt N1 W       &mtt N2 E     &mtt N3 R        &mtt N4 T                 &mtt N5 Y       &mtt N6 U     &mtt N7 I   &mtt N8 O       &mtt N9 P
-&mtt LEFT A           &mtt MINUS S    &mtt RIGHT D  &mtt EQUAL F     &mtt FSLH G               &mtt COLON H    &mtt SEMI J   &mtt DQT K  &kp L           &kp BSPC
-&ALTL                 &mtt PSCRN Z    &mtt LG(X) X  &mtt LBKT C      &mtt QMARK V              &mtt EXCL B     &mtt COMMA N  &mtt DOT M  &mtt SQT LG(N)  &kp ENTER
-                                      &SHFT                          &mtt L LEFT_SHIFT         &kp SPACE       &EALT         &sk LCTRL
+&mkp MB2         &mkp MB1
+&mtt K_BACK TAB  &msk LGUI LGUI  &mkp MB3      &none         &none
+&mtt N0 Q        &mtt N1 W       &mtt N2 E     &mtt N3 R     &mtt N4 T          &mtt N5 Y       &mtt N6 U     &mtt N7 I   &mtt N8 O       &mtt N9 P
+&mtt LEFT A      &mtt MINUS S    &mtt RIGHT D  &mtt EQUAL F  &mtt FSLH G        &mtt COLON H    &mtt SEMI J   &mtt DQT K  &kp L           &kp BSPC
+&ALTL            &mtt PSCRN Z    &mtt LG(X) X  &mtt LBKT C   &mtt QMARK V       &mtt EXCL B     &mtt COMMA N  &mtt DOT M  &mtt SQT LG(N)  &kp ENTER
+                                 &SHFT                       &mtt L LEFT_SHIFT  &kp SPACE       &EALT         &sk LCTRL
             >;
         };
 
         alt_layer {
             bindings = <
-&none            &none
-&kp DEL          &mtt LEFT_WIN LEFT_WIN  &mtt F4 F2    &mtt F12 F5    &kp F11
-&mtt TILDE HASH  &mtt HOME N1            &mtt UP N2    &mtt PG_UP N3  &mtt LBKT LPAR   &mtt RBKT RPAR     &mtt LT UNDER     &mtt GT MINUS   &mtt CARET PLUS    &mtt PERCENT AT
-&mtt EQUAL STAR  &mtt LEFT N4            &mtt DOWN N5  &mtt RIGHT N6  &mtt BSLH SLASH  &mtt PIPE COLON    &mtt AMPS SEMI    &mtt APOS APOS  &mtt DQT DQT       &mtt DEL BSPC
-&MAN             &mtt END N7             &mtt DOWN N8  &mtt PG_DN N9  &mtt LBRC QMARK  &mtt RBRC EXCL     &mtt GRAVE COMMA  &mtt DOT DOT    &mtt PSCRN C_MUTE  &kp ENTER
-                                         &SHFT                        &hm2 EP_TOG N0   &kp SPACE          &EALT             &sk LCTRL
+&mtt LC(LA(DEL)) F11  &mtt F12 F5
+&kp DEL               &mtt LEFT_WIN LEFT_WIN  &mtt F4 F2    &none          &none
+&mtt TILDE HASH       &mtt HOME N1            &mtt UP N2    &mtt PG_UP N3  &mtt LBKT LPAR   &mtt RBKT RPAR     &mtt LT UNDER     &mtt GT MINUS   &mtt CARET PLUS    &mtt PERCENT AT
+&mtt EQUAL STAR       &mtt LEFT N4            &mtt DOWN N5  &mtt RIGHT N6  &mtt BSLH SLASH  &mtt PIPE COLON    &mtt AMPS SEMI    &mtt APOS APOS  &mtt DQT DQT       &mtt DEL BSPC
+&MAN                  &mtt END N7             &mtt DOWN N8  &mtt PG_DN N9  &mtt LBRC QMARK  &mtt RBRC EXCL     &mtt GRAVE COMMA  &mtt DOT DOT    &mtt PSCRN C_MUTE  &kp ENTER
+                                              &SHFT                        &hm2 EP_TOG N0   &kp SPACE          &EALT             &sk LCTRL
             >;
         };
 
         media_layer {
             bindings = <
-&none  &none
-&bt0   &bt1   &bt BT_CLR  &bt2        &bt3
+&bt2   &bt3
+&bt0   &bt1   &bt BT_CLR  &none       &none
 &none  &none  &none       &sys_reset  &ext_power EP_TOG  &none           &none       &none  &none        &none
 &none  &none  &none       &none       &none              &none           &none       &none  &none        &none
 &CON   &none  &none       &none       &bl BL_DEC         &bl BL_TOG      &bl BL_INC  &none  &bootloader  &none
